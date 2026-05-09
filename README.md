@@ -1,4 +1,4 @@
-# Soroban-upgrade-guard
+# Soroban-guard
 
 > **Safe upgrade framework for Soroban smart contracts** — enforced timelocks, multi-sig governance,
 > migration compatibility checks, and one-command rollback support. The missing guard rails for
