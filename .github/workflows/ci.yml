@@ -65,8 +65,6 @@ jobs:
       - uses: Swatinem/rust-cache@v2
         with:
           workspaces: contracts
-      - name: Install stellar-cli
-        run: cargo install --locked stellar-cli
       - name: Run contract tests
         working-directory: contracts
         run: cargo test

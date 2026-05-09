@@ -15,6 +15,12 @@ module.exports = {
     project: true,
     tsconfigRootDir: __dirname,
   },
+  settings: {
+    "import/resolver": {
+      typescript: true,
+      node: true,
+    },
+  },
   rules: {
     "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
     "@typescript-eslint/consistent-type-imports": [
@@ -44,5 +50,17 @@ module.exports = {
     "coverage/",
     "*.config.*",
     ".eslintrc.*",
+  ],
+  overrides: [
+    {
+      files: ["**/*.test.ts", "**/*.spec.ts"],
+      extends: [
+        "eslint:recommended",
+        "prettier",
+      ],
+      rules: {
+        "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+      },
+    },
   ],
 };

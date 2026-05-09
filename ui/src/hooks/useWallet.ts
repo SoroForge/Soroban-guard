@@ -16,9 +16,11 @@ export function useWallet() {
   return {
     publicKey: null as string | null,
     isConnected: false,
+    // eslint-disable-next-line @typescript-eslint/require-await
     connect: async () => {
       throw new Error("useWallet.connect() — not yet implemented");
     },
+    // eslint-disable-next-line @typescript-eslint/require-await
     disconnect: async () => {
       throw new Error("useWallet.disconnect() — not yet implemented");
     },
