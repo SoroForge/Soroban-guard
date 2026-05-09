@@ -1,7 +1,7 @@
 # Contributing to soroban-upgrade-guard
 
-Thank you for contributing to `soroban-upgrade-guard`! This guide covers everything
-you need to get started.
+Thank you for contributing to `soroban-upgrade-guard`! This guide covers everything you need to get
+started.
 
 ---
 
@@ -34,6 +34,7 @@ pnpm build
 ## Development workflow
 
 1. Create a branch:
+
    ```
    feat/timelock-configurable-delay
    fix/governance-vote-replay
@@ -41,6 +42,7 @@ pnpm build
    ```
 
 2. Run all checks before pushing:
+
    ```bash
    pnpm lint && pnpm typecheck && pnpm test && pnpm test:contracts
    ```
@@ -55,10 +57,11 @@ Format: `<type>(<scope>): <description>`
 
 **Types**: `feat`, `fix`, `docs`, `refactor`, `test`, `ci`, `chore`, `contract`, `security`
 
-**Scopes**: `sdk`, `ui`, `timelock`, `multisig-governance`, `upgrade-proxy`, `docs`,
-`examples`, `ci`, `deps`
+**Scopes**: `sdk`, `ui`, `timelock`, `multisig-governance`, `upgrade-proxy`, `docs`, `examples`,
+`ci`, `deps`
 
 **Examples**:
+
 ```
 contract(timelock): implement execute_upgrade() with delay validation
 feat(sdk): add UpgradeManager.runMigrationChecks()
@@ -87,6 +90,7 @@ cd contracts && cargo test
 Contract tests run in a simulated Soroban environment — no network needed.
 
 When writing new contract tests, use the `soroban-sdk` testutils:
+
 ```rust
 use soroban_sdk::{testutils::Address as _, Env};
 let env = Env::default();
@@ -105,6 +109,7 @@ pnpm audit                    # known npm CVEs
 ## Good first issues
 
 Look for issues labelled:
+
 - `good first issue` — suitable for newcomers
 - `help wanted` — any contributor can pick up
 - `contract` — Rust / Soroban contract work

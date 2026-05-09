@@ -66,7 +66,7 @@ jobs:
         with:
           workspaces: contracts
       - name: Install stellar-cli
-        run: cargo install --locked stellar-cli --features opt
+        run: cargo install --locked stellar-cli
       - name: Run contract tests
         working-directory: contracts
         run: cargo test

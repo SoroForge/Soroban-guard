@@ -6,11 +6,11 @@
 
 `soroban-upgrade-guard` is a monorepo with three layers:
 
-| Layer | Location | Language |
-|---|---|---|
-| On-chain contracts | `/contracts` | Rust (Soroban) |
-| TypeScript SDK | `/sdk` | TypeScript |
-| Governance UI | `/ui` | React + TypeScript |
+| Layer              | Location     | Language           |
+| ------------------ | ------------ | ------------------ |
+| On-chain contracts | `/contracts` | Rust (Soroban)     |
+| TypeScript SDK     | `/sdk`       | TypeScript         |
+| Governance UI      | `/ui`        | React + TypeScript |
 
 ## Upgrade pipeline
 
@@ -37,19 +37,19 @@ Every upgrade flows through two mandatory gates before reaching a live contract:
 
 ## Contract responsibilities
 
-| Contract | Single responsibility |
-|---|---|
-| `timelock` | Record proposals; block execution until delay elapses; cancel |
+| Contract              | Single responsibility                                         |
+| --------------------- | ------------------------------------------------------------- |
+| `timelock`            | Record proposals; block execution until delay elapses; cancel |
 | `multisig-governance` | M-of-N council voting; forward approved proposals to timelock |
-| `upgrade-proxy` | Optional stable address; pre/post migration hooks |
+| `upgrade-proxy`       | Optional stable address; pre/post migration hooks             |
 
 ## Key design decisions
 
 <!-- Document significant technical decisions here as they are made -->
 
 | Decision | Rationale |
-|---|---|
-| _TBD_ | _TBD_ |
+| -------- | --------- |
+| _TBD_    | _TBD_     |
 
 ## Adding a new contract
 

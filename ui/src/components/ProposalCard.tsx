@@ -12,9 +12,5 @@
  * TODO: implement once GovernanceProposal type is finalised.
  */
 export function ProposalCard() {
-  return (
-    <div>
-      {/* TODO: proposal title, status badge, vote bar, action buttons */}
-    </div>
-  );
+  return <div>{/* TODO: proposal title, status badge, vote bar, action buttons */}</div>;
 }

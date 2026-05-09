@@ -12,9 +12,5 @@
  * TODO: implement using useWallet hook.
  */
 export function WalletConnect() {
-  return (
-    <div>
-      {/* TODO: wallet connection button */}
-    </div>
-  );
+  return <div>{/* TODO: wallet connection button */}</div>;
 }

@@ -1,7 +1,7 @@
 # Contract Tests
 
-Contract unit tests live inside each contract's `src/lib.rs` under `#[cfg(test)]`.
-They use `soroban-sdk`'s built-in test utilities and require no live network.
+Contract unit tests live inside each contract's `src/lib.rs` under `#[cfg(test)]`. They use
+`soroban-sdk`'s built-in test utilities and require no live network.
 
 ## Run all contract tests
 

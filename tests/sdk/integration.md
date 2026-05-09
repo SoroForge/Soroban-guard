@@ -14,5 +14,5 @@ export GOVERNANCE_CONTRACT_ID=C... # deployed governance
 pnpm test:integration
 ```
 
-Integration tests are skipped in CI unless `STELLAR_NETWORK` is set.
-Run them manually before cutting a release.
+Integration tests are skipped in CI unless `STELLAR_NETWORK` is set. Run them manually before
+cutting a release.

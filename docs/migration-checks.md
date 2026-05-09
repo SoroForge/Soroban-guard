@@ -1,16 +1,16 @@
 # Migration Checks
 
-`runMigrationChecks()` scans a new WASM binary before an upgrade is proposed,
-catching breaking changes before they reach production.
+`runMigrationChecks()` scans a new WASM binary before an upgrade is proposed, catching breaking
+changes before they reach production.
 
 ## Checks performed
 
-| Check | Description | Severity |
-|---|---|---|
-| ABI compatibility | Detects removed or renamed public contract functions | 🔴 Error |
-| Storage schema diff | Flags new, removed, or renamed storage keys | 🟠 Warning |
-| Simulated invocations | Runs a suite of read-only calls against a testnet fork | 🔴 Error |
-| WASM size regression | Warns if binary size increases by more than 20% | 🟡 Info |
+| Check                 | Description                                            | Severity   |
+| --------------------- | ------------------------------------------------------ | ---------- |
+| ABI compatibility     | Detects removed or renamed public contract functions   | 🔴 Error   |
+| Storage schema diff   | Flags new, removed, or renamed storage keys            | 🟠 Warning |
+| Simulated invocations | Runs a suite of read-only calls against a testnet fork | 🔴 Error   |
+| WASM size regression  | Warns if binary size increases by more than 20%        | 🟡 Info    |
 
 ## Usage
 
@@ -41,7 +41,7 @@ All critical checks passed. Review warnings before proceeding.
 
 ## Limitations
 
-- Storage schema diffing requires the contract to export its key types as part of the
-  public ABI. If your contract does not do this, the check is skipped with a warning.
-- Simulated invocations run against the current testnet state. Ensure the target
-  contract is deployed on testnet before running checks.
+- Storage schema diffing requires the contract to export its key types as part of the public ABI. If
+  your contract does not do this, the check is skipped with a warning.
+- Simulated invocations run against the current testnet state. Ensure the target contract is
+  deployed on testnet before running checks.

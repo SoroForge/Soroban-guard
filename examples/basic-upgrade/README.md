@@ -1,7 +1,7 @@
 # Example: Basic Upgrade
 
-The simplest possible upgrade flow — a single admin key, 1-of-1 governance,
-and a short testnet timelock delay.
+The simplest possible upgrade flow — a single admin key, 1-of-1 governance, and a short testnet
+timelock delay.
 
 ## What it covers
 
@@ -19,5 +19,5 @@ export STELLAR_RPC_URL=https://soroban-testnet.stellar.org
 pnpm --filter @examples/basic-upgrade start
 ```
 
-> **Note:** This example will be fleshed out once `UpgradeManager.deployTimelock()`
-> and `UpgradeManager.deployGovernance()` land in v0.1.
+> **Note:** This example will be fleshed out once `UpgradeManager.deployTimelock()` and
+> `UpgradeManager.deployGovernance()` land in v0.1.

@@ -9,9 +9,5 @@
  * TODO: implement using current ledger from Stellar RPC subscription.
  */
 export function TimelockCountdown() {
-  return (
-    <div>
-      {/* TODO: countdown timer — days / hours / minutes / seconds */}
-    </div>
-  );
+  return <div>{/* TODO: countdown timer — days / hours / minutes / seconds */}</div>;
 }

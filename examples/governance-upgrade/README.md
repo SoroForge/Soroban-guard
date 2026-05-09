@@ -23,5 +23,4 @@ export STELLAR_RPC_URL=https://soroban-testnet.stellar.org
 pnpm --filter @examples/governance-upgrade start
 ```
 
-> **Note:** This example will be fleshed out once council voting is
-> fully implemented in v0.2.
+> **Note:** This example will be fleshed out once council voting is fully implemented in v0.2.
