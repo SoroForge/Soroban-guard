@@ -18,7 +18,7 @@ import type {
  *
  * @example
  * ```typescript
- * import { UpgradeManager } from "@soroban-upgrade-guard/sdk";
+ * import { UpgradeManager } from "@soroban-guard/sdk";
  *
  * const manager = new UpgradeManager({
  *   network: { network: "testnet", rpcUrl: "...", networkPassphrase: "..." },

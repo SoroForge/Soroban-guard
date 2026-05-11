@@ -1,5 +1,5 @@
 /**
- * Shared utility helpers for @soroban-upgrade-guard/sdk.
+ * Shared utility helpers for @soroban-guard/sdk.
  *
  * Add pure, stateless helper functions here (e.g. WASM hash computation,
  * ledger-to-time estimates, XDR helpers).

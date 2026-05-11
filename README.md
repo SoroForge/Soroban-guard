@@ -1,23 +1,22 @@
-# Soroban-guard
+<h1 align="center">Soroban-guard</h1>
 
 > **Safe upgrade framework for Soroban smart contracts** — enforced timelocks, multi-sig governance,
 > migration compatibility checks, and one-command rollback support. The missing guard rails for
 > Soroban production deployments.
 
 <p align="center">
-  <a href="https://github.com/SoroForge/soroban-upgrade-guard/actions/workflows/ci.yml">
-    <img alt="CI" src="https://github.com/SoroForge/soroban-upgrade-guard/actions/workflows/ci.yml/badge.svg" />
+  <a href="https://github.com/SoroForge/soroban-guard/actions/workflows/ci.yml">
+    <img alt="CI" src="https://github.com/SoroForge/soroban-guard/actions/workflows/ci.yml/badge.svg" />
   </a>
-  <a href="https://www.npmjs.com/package/@soroban-upgrade-guard/sdk">
-    <img alt="npm" src="https://img.shields.io/npm/v/@soroban-upgrade-guard/sdk?color=blue" />
+  <a href="https://www.npmjs.com/package/@soroban-guard/sdk">
+    <img alt="npm" src="https://img.shields.io/npm/v/@soroban-guard/sdk?color=blue" />
   </a>
   <a href="https://opensource.org/licenses/MIT">
     <img alt="License" src="https://img.shields.io/badge/license-MIT-blue" />
   </a>
-  <a href="https://github.com/SoroForge/soroban-upgrade-guard/blob/main/CONTRIBUTING.md">
+  <a href="https://github.com/SoroForge/soroban-guard/blob/main/CONTRIBUTING.md">
     <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen" />
   </a>
-  <img alt="Soroban" src="https://img.shields.io/badge/Soroban-Mainnet%20Ready-7B68EE" />
 </p>
 
 ---
@@ -53,8 +52,8 @@ but it comes with serious risks that no existing tool addresses:
 | No compatibility checks on new WASM               | Silent storage-schema breakage, removed functions, logic regressions |
 | No standard rollback path                         | A bad upgrade can permanently brick a contract                       |
 
-As Soroban DeFi TVL grows, these gaps become increasingly dangerous. **`soroban-upgrade-guard`
-provides the guard rails that every production Soroban contract needs.**
+As Soroban DeFi TVL grows, these gaps become increasingly dangerous. **`soroban-guard` provides the
+guard rails that every production Soroban contract needs.**
 
 ---
 
@@ -99,9 +98,9 @@ upgrade if something looks wrong. No upgrade reaches production without passing 
 
 ### SDK (`/sdk`)
 
-| Package                      | Description                                                                          |
-| ---------------------------- | ------------------------------------------------------------------------------------ |
-| `@soroban-upgrade-guard/sdk` | TypeScript SDK — deploy contracts, manage the upgrade pipeline, run migration checks |
+| Package              | Description                                                                          |
+| -------------------- | ------------------------------------------------------------------------------------ |
+| `@soroban-guard/sdk` | TypeScript SDK — deploy contracts, manage the upgrade pipeline, run migration checks |
 
 ### UI (`/ui`)
 
@@ -139,12 +138,12 @@ on, and monitor upgrade proposals.
 
 ## Packages
 
-### `@soroban-upgrade-guard/sdk`
+### `@soroban-guard/sdk`
 
 ```bash
-npm install @soroban-upgrade-guard/sdk @stellar/stellar-sdk
+npm install @soroban-guard/sdk @stellar/stellar-sdk
 # or
-pnpm add @soroban-upgrade-guard/sdk @stellar/stellar-sdk
+pnpm add @soroban-guard/sdk @stellar/stellar-sdk
 ```
 
 ---
@@ -163,8 +162,8 @@ pnpm add @soroban-upgrade-guard/sdk @stellar/stellar-sdk
 ### Clone and install
 
 ```bash
-git clone https://github.com/SoroForge/soroban-upgrade-guard.git
-cd soroban-upgrade-guard
+git clone https://github.com/SoroForge/soroban-guard.git
+cd soroban-guard
 pnpm install
 ```
 
@@ -193,7 +192,7 @@ pnpm test:contracts # Rust
 ### Step 0 — Deploy the guard contracts
 
 ```typescript
-import { UpgradeManager } from "@soroban-upgrade-guard/sdk";
+import { UpgradeManager } from "@soroban-guard/sdk";
 import { Networks } from "@stellar/stellar-sdk";
 
 const network = {
@@ -346,7 +345,7 @@ The UI shows:
 - [ ] `runMigrationChecks()`: ABI compatibility check
 - [ ] `runMigrationChecks()`: storage schema diff
 - [ ] `runMigrationChecks()`: simulated invocations on testnet fork
-- [ ] CLI: `soroban-upgrade-guard check ./path/to.wasm --target CONTRACT_ID`
+- [ ] CLI: `soroban-guard check ./path/to.wasm --target CONTRACT_ID`
 
 ### v0.3 — Governance UI
 
@@ -362,8 +361,8 @@ The UI shows:
 - [ ] Third-party security audit of all contracts
 - [ ] Mainnet launch
 
-> Want to contribute? See [open issues](https://github.com/SoroForge/soroban-upgrade-guard/issues)
-> and filter by `good first issue` or `help wanted`.
+> Want to contribute? See [open issues](https://github.com/SoroForge/soroban-guard/issues) and
+> filter by `good first issue` or `help wanted`.
 
 ---
 
@@ -390,4 +389,4 @@ Please do **not** report security vulnerabilities via GitHub issues. See
 
 ## License
 
-MIT © YOUR_NAME — see [LICENSE](./LICENSE).
+MIT ©  — see [LICENSE](./LICENSE).

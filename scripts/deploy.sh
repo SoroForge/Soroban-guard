@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # =============================================================================
-# deploy.sh — Deploy soroban-upgrade-guard contracts to a Stellar network
+# deploy.sh — Deploy soroban-guard contracts to a Stellar network
 # =============================================================================
 #
 # Usage:

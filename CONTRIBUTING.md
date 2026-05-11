@@ -1,29 +1,23 @@
-# Contributing to soroban-upgrade-guard
+# Contributing to soroban-guard
 
-Thank you for contributing to `soroban-upgrade-guard`! This guide covers everything you need to get
-started.
-
----
-
-## Code of conduct
-
-All contributors must follow our [Code of Conduct](./CODE_OF_CONDUCT.md).
+Thank you for contributing to `soroban-guard`! This guide covers everything you need to get started.
 
 ---
+
 
 ## Getting started
 
 ### Prerequisites
 
-- **Node.js ≥ 18** and **pnpm ≥ 8**
+- **Node.js ≥ 22** and **pnpm ≥ 8**
 - **Rust stable** + `wasm32-unknown-unknown` target
 - **stellar-cli**: `cargo install --locked stellar-cli --features opt`
 
 ### Setup
 
 ```bash
-git clone https://github.com/YOUR_FORK/soroban-upgrade-guard.git
-cd soroban-upgrade-guard
+git clone https://github.com/YOUR_FORK/soroban-guard.git
+cd soroban-guard
 pnpm install
 rustup target add wasm32-unknown-unknown
 pnpm build
@@ -118,4 +112,4 @@ Look for issues labelled:
 
 ---
 
-Questions? Open a [Discussion](https://github.com/YOUR_USERNAME/soroban-upgrade-guard/discussions).
+Questions? Open a [Discussion](https://github.com/SoroForge/soroban-guard/discussions).

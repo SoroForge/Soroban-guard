@@ -32,7 +32,7 @@ assignees: []
 
 ## Environment
 
-- **soroban-upgrade-guard version**:
+- **soroban-guard version**:
 - **Affected area**: `sdk` / `contracts` / `ui`
 - **Node.js version**:
 - **OS**:

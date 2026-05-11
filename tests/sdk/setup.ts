@@ -1,5 +1,5 @@
 /**
- * Global test setup for @soroban-upgrade-guard/sdk unit tests.
+ * Global test setup for @soroban-guard/sdk unit tests.
  *
  * Add shared mocks, constants, or helper factories here.
  * This file is run once before each test suite.

@@ -1,5 +1,5 @@
 {
-  "name": "soroban-upgrade-guard",
+  "name": "soroban-guard",
   "version": "0.0.1",
   "private": true,
   "description": "Safe upgrade framework for Soroban smart contracts — timelocks, multi-sig governance, migration testing, and rollback support",
@@ -12,13 +12,13 @@
     "timelock",
     "security"
   ],
-  "homepage": "https://github.com/SoroForge/soroban-upgrade-guard#readme",
+  "homepage": "https://github.com/SoroForge/soroban-guard#readme",
   "bugs": {
-    "url": "https://github.com/SoroForge/soroban-upgrade-guard/issues"
+    "url": "https://github.com/SoroForge/soroban-guard/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SoroForge/soroban-upgrade-guard.git"
+    "url": "https://github.com/SoroForge/soroban-guard.git"
   },
   "license": "MIT",
   "workspaces": [
@@ -49,8 +49,6 @@
     "@typescript-eslint/parser": "^7.14.1",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-import-resolver-typescript": "^4.4.4",
-    "eslint-plugin-import": "^2.32.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
     "prettier": "^3.3.2",

@@ -1,5 +1,5 @@
 /**
- * Core types for @soroban-upgrade-guard/sdk.
+ * Core types for @soroban-guard/sdk.
  */
 
 export type StellarNetwork = "mainnet" | "testnet" | "futurenet" | "standalone";

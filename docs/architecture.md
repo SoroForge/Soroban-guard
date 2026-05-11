@@ -4,7 +4,7 @@
 
 ## Overview
 
-`soroban-upgrade-guard` is a monorepo with three layers:
+`soroban-guard` is a monorepo with three layers:
 
 | Layer              | Location     | Language           |
 | ------------------ | ------------ | ------------------ |

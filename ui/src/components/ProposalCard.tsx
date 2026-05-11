@@ -5,7 +5,7 @@
  * (Approve / Reject / Queue / Cancel) depending on the viewer's role.
  *
  * Props:
- * - proposal  — GovernanceProposal from @soroban-upgrade-guard/sdk
+ * - proposal  — GovernanceProposal from @soroban-guard/sdk
  * - onApprove — callback when council member approves
  * - onReject  — callback when council member rejects
  *

@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: Ask a question
-    url: https://github.com/YOUR_USERNAME/soroban-upgrade-guard/discussions
+    url: https://github.com/SoroForge/soroban-guard/discussions
     about: Use GitHub Discussions for questions, ideas, and general support
   - name: Stellar Developer Discord
     url: https://discord.gg/stellardev

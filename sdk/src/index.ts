@@ -1,5 +1,5 @@
 /**
- * @soroban-upgrade-guard/sdk
+ * @soroban-guard/sdk
  *
  * Safe upgrade framework for Soroban smart contracts.
  * Timelocks, multi-sig governance, migration testing, and rollback support.
